@@ -7,6 +7,7 @@ public class LocomotionDirection : MonoBehaviour
     Animator anim;
 
     float vertical, horizontal;
+    bool crouch;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,10 +24,12 @@ public class LocomotionDirection : MonoBehaviour
     void GetInputs() {
         vertical = Input.GetAxis("Vertical");
         horizontal = Input.GetAxis("Horizontal");
+        crouch = Input.GetButton("Crouch");
     }
 
     void SetAnimatorValues() {
         anim.SetFloat("Vertical", vertical);
         anim.SetFloat("Horizontal", horizontal);
+        anim.SetBool("Crouch", crouch);
     }
 }

@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Target
+  - Player
+  - Wall
+  - Floor
   - 
   - 
   - 
